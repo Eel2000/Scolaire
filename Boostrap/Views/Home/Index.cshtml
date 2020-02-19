@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "BootstrapIntegrate";
+}
+
+    <div>
+        <div class="img-thumbnail text-md-center bg-secondary" id="main_txt">
+            <h1 id="wlcMsg">Bienvenu sur Bootstrap integration on Asp.Net</h1>
+        </div>
+    </div>   
+
+
+<div class="container-fluid" id="container">
+    <div class="row" id="col">
+        <div class="col-sm-3">
+            <div class="card" style="width: 20rem;">
+                <img src="~/images/-860706801.jpg" alt="img_film"  class="card-img-top"/>
+                <div class="card-body">
+                    <h5>Films</h5>
+                    <p>
+                        Nous vous proposons dans cette section , toutes une panoplie de films que vous pourrez
+                        biensur avoir chez nos fournisseur
+                        et dans les cinema de la place.
+                    </p>
+                    <br />
+                    <br />
+                    <br />
+                    <a asp-action="Films" asp-controller="Home" class="btn btn-primary">Commencer</a>
+                </div>
+            </div>           
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="width: 20rem;">
+                <img src="~/images/6896199-nike-wallpaper-hd.jpg" alt="img_habillement" class="card-img-top" />
+                <div class="card-body">
+                    <h5>Habillements</h5>
+                    <p>
+                       Dans cette colonne vous decouvrirez les diffente boutique de la place et les different (leurs) produit vestimentaire
+                        qu'ils nous propose et vous aurais aussi les moyen de reserver sur un produit ou de l'acheter en ligne + une livraison
+                        gratuite,
+                    </p>
+                    <br />
+                    <a asp-controller="Home" asp-action="Habillements" class="btn btn-danger">Commencer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="width: 20rem;">
+                <img src="~/images/armenia_teghut-wallpaper-1366x768.jpg" alt="img_tourisme" class="card-img-top" />
+                <div class="card-body">
+                    <h5>Tourisme</h5>
+                    <p>
+                        Les different sites touristique de la Republique Democratique du Congo , de site grandiose, 
+                        magnifique , magestueux, et beau , des endroit remplit de joie et qui vous remplis de bonhonneur.
+                        Vous pourrez reserver des chambre a l'avance , chambre ,transport, restauration...
+                    </p>
+                    <a asp-controller="Home" asp-action="Tourisme" class="btn btn-warning">Commencer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="width: 20rem;">
+                <img src="~/images/08ff3295a50270975abddf0fa895fe3f_large.jpg" alt="img_gaming" class="card-img-top" />
+                <div class="card-body">
+                    <h5>Gaming</h5>
+                    <p>
+                        Ici vous trouverez une game des plusieur jeux video sur console et meme le moyens de les reserver, des les acheter.
+                        vous trouverez aussii les grand espaces des jeux du pays, de la province , de la ville et meme la possibilite 
+                        d'y participe.
+                    </p>
+                    <a href="#" class="btn btn-success">Commencer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 

@@ -1,0 +1,50 @@
+﻿#col{
+    margin-top:3rem;
+    margin-bottom: 6px;
+    /*width: 400px;*/
+}
+
+#main_txt {
+    height: 500px;
+    background-image: url('../images/graffiti_447346.jpg');
+}
+
+#wlcMsg{
+    margin-top: 1rem;
+}
+
+.bottom-footer{
+    border-top: 1px solid #00a651;
+    margin-top:0px;
+    padding-top: 7px;
+    color: #00a651
+}
+
+.footer-nav li{
+    display:inline;
+    padding:0px 40px;
+}
+
+.footer-nav a{
+    color:grey;
+    text-decoration:none;
+}
+#foot{
+    height:100px;
+    margin-bottom:0px;
+}
+
+#container{
+    margin:auto;
+    /*width: 800px;
+    margin-bottom: 6rem;*/
+    /*display: inline;*/
+}
+
+/*
+    for page Films
+*/
+
+#carousel{
+    height: 600px
+}

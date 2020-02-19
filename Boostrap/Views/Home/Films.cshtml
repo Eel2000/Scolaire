@@ -1,0 +1,126 @@
+﻿
+@{ 
+    ViewBag.Title = "BootstrapIntegration / Films";
+}
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="background-attachment:fixed">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="3"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="4"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="5"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="6"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="7"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="8"></li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="9"></li>
+        </ol>
+        <div class="carousel-inner" id="carousel">
+            <div class="carousel-item active" id="carousel" data-interval="2000">
+                <img src="~/images/guardians_of_the_galaxy_vol_2_2017-1920x1080.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" id="carousel" data-interval="2000">
+                <img src="~/images/batman_v_superman_dawn_of_justice_2016_movie-1920x1080.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" id="carousel" data-interval="2000">
+                <img src="~/images/mowgli_king_louie_jungle_book-1920x1080.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" id="carousel" data-interval="2000">
+                <img src="~/images/x_men_apocalypse_en_sabah_nur-1920x1080.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" id="carousel" data-interval="2000">
+                <img src="~/images/warcraft_movie-1920x1080.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" id="carousel" data-interval="2000">
+                <img src="~/images/wonder_woman_2017_movie-1920x1080.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" id="carousel" data-interval="2000">
+                <img src="~/images/274135.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" id="carousel" data-interval="2000">
+                <img src="~/images/artsfon.com-121309.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" id="carousel" data-interval="2000">
+                <img src="~/images/artsfon.com-78931 (1).jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" id="carousel" data-interval="2000">
+                <img src="~/images/judy_hopps_in_zootopia-1920x1080.jpg" class="d-block w-100" alt="..." />
+            </div>
+        </div>
+    </div>
+
+    <div style="background-attachment:scroll">
+        <div class="row" style="margin-top:4rem; margin-bottom:5rem;">
+            <div class="col-lg-2 text-center" style="margin:auto;">
+                <div class="card bg-danger">
+                    <div class="card-header"><h3>Categories</h3></div>
+                    <div class="card-body">
+                        <div class="card">
+                            <div class="card-header"><h3>Slogan</h3></div>
+                            <div class="card-body">
+                                text
+                            </div>
+                        </div>
+                        @for (int i = 0; i < 8; i++)
+                        {
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="#">Category</a></li>
+                            </ul>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 text-center align-items-center" style="margin:auto">
+                <h4 class="card-deck">List of All films</h4>
+                <div class="list-group text-justify" data-spy="scroll" data-target="#carouselExampleSlidesOnly">
+                    @for(int i = 1; i<15; i++)
+                    {
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <div class="list-group text-center text-capitalize">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    Films title number @i  of all.
+                                    <h5 class="badge badge-warning">@i.5Gb</h5>
+                                </a>
+                                <span class="badge badge-danger spinner-border align-content-end">@i.5Gb</span>
+                            </div>
+                        </div>
+                        @*<div class="col-sm-2">
+                           <span class="badge badge-warning">@i.5Gb</span>
+                        </div>*@
+                    </div>
+                    }
+                    
+                </div>
+            </div>
+            <div class="col-lg-2 text-center" style="width:200px; margin-left:0px;">
+                <div class="card bg-dark">
+                    <div class="card-header"><h3>Cinema News</h3></div>
+                    <div class="card-body bg-transparent" data-spy="scroll" data-target="#carouselExampleSlidesOnly" data-offset="0">
+                        @for(int i = 1; i < 3; i++)
+                        {
+                           <div class="card text-center">
+                               <div class="card-header">
+                                   New 2020 films
+                               </div>
+                               <div class="card-body">
+                                   <h5 class="card-title">New film title</h5>
+                                   <p class="card-text">
+                                       Release Date of this film and some details on, like directors, realisator, main actors...
+                                   </p>
+                                   <a href="#" class="btn btn-warning">More details</a>
+                               </div>
+                               <div class="card-footer text-muted">
+                                   @i mounths ago 
+                               </div>
+                           </div>
+                        }
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    

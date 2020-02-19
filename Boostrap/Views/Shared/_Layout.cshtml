@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0 , shrink-to-fit=no" />
+    <link href="~/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/Index.css" rel="stylesheet" />
+
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @await Html.PartialAsync("_NavigationBar")
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="blockquote-footer bg-dark" id="foot">
+        <div class="container">
+            <!--ajout ici de la vue partielle qui aurat les links de footer-->
+            <div>
+                @await Html.PartialAsync("_footer")
+            </div>
+            <!---->
+            <div class="row" style="margin-top:7rem;">
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &copy; copyright Genesis Technologies 2020.</p>
+            </div>
+            <div class="bottom-footer">
+                <div class="col-md-12">
+                    <ul class="footer-nav">
+                        <li><a href="#"><img src="~/images/Entypo_f30f(0).ico" /></a></li>
+                        <li><a href="#"><img src="~/images/Entypo_f30c(0).ico" /></a></li>
+                        <li><a href="#"><img src="~/images/Entypo_f309(0).ico" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/assets/js/vendor/jquery-slim.min.js"></script>
+    <script src="~/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
